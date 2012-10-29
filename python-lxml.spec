@@ -2,12 +2,12 @@
 
 Summary:	A Pythonic binding for the libxml2 and libxslt libraries
 Name:		python-%{module}
-Version:	2.3.5
-Release:	2
+Version:	3.0.1
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://codespeak.net/lxml/%{module}-%{version}.tgz
-# Source0-md5:	d03fb3b9139df7f182afffe72f412c87
+# Source0-md5:	0f2b1a063ab3b6b0944cbc4a9a85dcfa
 URL:		http://codespeak.net/lxml/
 BuildRequires:	libxml2-devel
 BuildRequires:	libxslt-devel
@@ -42,12 +42,15 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc/* CHANGES.txt CREDITS.txt TODO.txt
 %dir %{py_sitedir}/lxml
 %dir %{py_sitedir}/lxml/html
+%dir %{py_sitedir}/lxml/includes
 %dir %{py_sitedir}/lxml/isoschematron
 %attr(755,root,root) %{py_sitedir}/lxml/*.so
 %{py_sitedir}/lxml/*.h
-%{py_sitedir}/lxml/*.pxd
 %{py_sitedir}/lxml/*.py[co]
 %{py_sitedir}/lxml/html/*.py[co]
+%{py_sitedir}/lxml/includes/*.h
+%{py_sitedir}/lxml/includes/*.pxd
+%{py_sitedir}/lxml/includes/*.py[co]
 %{py_sitedir}/lxml/isoschematron/*.py[co]
 %{py_sitedir}/lxml/isoschematron/resources
 
