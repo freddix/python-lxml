@@ -2,12 +2,12 @@
 
 Summary:	A Pythonic binding for the libxml2 and libxslt libraries
 Name:		python-%{module}
-Version:	3.0.1
+Version:	3.0.2
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://codespeak.net/lxml/%{module}-%{version}.tgz
-# Source0-md5:	0f2b1a063ab3b6b0944cbc4a9a85dcfa
+# Source0-md5:	38b15b0dd5e9292cf98be800e84a3ce4
 URL:		http://codespeak.net/lxml/
 BuildRequires:	libxml2-devel
 BuildRequires:	libxslt-devel
